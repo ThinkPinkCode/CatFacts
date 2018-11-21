@@ -22,6 +22,15 @@ public class CatFactsActivity extends AppCompatActivity {
         factTextView = findViewById(R.id.factTextView);
         showFactButton = findViewById(R.id.showFactButton);
 
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        };
+
+        showFactButton.setOnClickListener(listener);
+
     }
 
 
