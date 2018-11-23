@@ -25,7 +25,10 @@ public class CatFactsActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //The button was clicked, so update the fact TextView with a new fact.
+                String fact = "Cats have been domesticated for around 4,000 years.";
 
+                factTextView.setText(fact);
             }
         };
 
