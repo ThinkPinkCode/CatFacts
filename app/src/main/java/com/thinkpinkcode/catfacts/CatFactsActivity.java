@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -15,11 +16,13 @@ public class CatFactsActivity extends AppCompatActivity {
     //Declare our view variables
     private TextView factTextView;
     private Button showFactButton;
+    private RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cat_facts);
+
 
         //Assign views from the layout file to the corresponding variable
 
@@ -32,6 +35,9 @@ public class CatFactsActivity extends AppCompatActivity {
                 //The button was clicked, so update the fact TextView with a new fact.
                 String fact = factBook.getFact();
                 factTextView.setText(fact);
+                relativeLayout.setBackgroundColor();
+
+                //
             }
         };
 
