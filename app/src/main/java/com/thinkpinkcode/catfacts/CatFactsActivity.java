@@ -1,5 +1,6 @@
 package com.thinkpinkcode.catfacts;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,28 +24,18 @@ public class CatFactsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cat_facts);
 
-
-        //Assign views from the layout file to the corresponding variable
-
         factTextView = findViewById(R.id.factTextView);
         showFactButton = findViewById(R.id.showFactButton);
+        relativeLayout = findViewById(R.id.relativeLayout);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //The button was clicked, so update the fact TextView with a new fact.
                 String fact = factBook.getFact();
                 factTextView.setText(fact);
-                relativeLayout.setBackgroundColor();
-
-                //
+                relativeLayout.setBackgroundColor(Color.RED);
             }
         };
-
         showFactButton.setOnClickListener(listener);
-
     }
-
-
-
 }
