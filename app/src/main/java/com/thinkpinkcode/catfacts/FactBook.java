@@ -20,8 +20,8 @@ class FactBook {
     };
 
     String getFact() {
-        Random randomgenerator = new Random();
-        int randomNumber = randomgenerator.nextInt(facts.length);
+        Random randomGenerator = new Random();
+        int randomNumber = randomGenerator.nextInt(facts.length);
         return facts[randomNumber];
     }
 }

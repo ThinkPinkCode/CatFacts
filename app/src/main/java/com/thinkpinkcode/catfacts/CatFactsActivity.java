@@ -13,6 +13,7 @@ import java.util.Random;
 public class CatFactsActivity extends AppCompatActivity {
 
     private FactBook factBook = new FactBook();
+    private ColorWheel colorWheel = new ColorWheel();
 
     //Declare our view variables
     private TextView factTextView;
@@ -32,8 +33,9 @@ public class CatFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String fact = factBook.getFact();
+                int color = colorWheel.getColor();
                 factTextView.setText(fact);
-                relativeLayout.setBackgroundColor(Color.RED);
+                relativeLayout.setBackgroundColor(color);
             }
         };
         showFactButton.setOnClickListener(listener);

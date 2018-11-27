@@ -1,5 +1,7 @@
 package com.thinkpinkcode.catfacts;
 
+import android.graphics.Color;
+
 import java.util.Random;
 
 public class ColorWheel {
@@ -17,9 +19,10 @@ public class ColorWheel {
             "#FFB86F"
     };
 
-    String getColor() {
-        Random randomgenerator = new Random();
-        int randomNumber = randomgenerator.nextInt(colors.length);
-        return colors[randomNumber];
+    int getColor() {
+        Random randomGenerator = new Random();
+        int randomNumber = randomGenerator.nextInt(colors.length);
+        int color = Color.parseColor(colors[randomNumber]);
+        return color;
     }
 }
