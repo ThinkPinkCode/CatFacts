@@ -22,7 +22,6 @@ public class ColorWheel {
     int getColor() {
         Random randomGenerator = new Random();
         int randomNumber = randomGenerator.nextInt(colors.length);
-        int color = Color.parseColor(colors[randomNumber]);
-        return color;
+        return Color.parseColor(colors[randomNumber]);
     }
 }

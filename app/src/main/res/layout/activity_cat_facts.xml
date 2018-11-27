@@ -33,6 +33,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="#D7F2BA"
+        android:textColor="#D7F2BA"
         android:text="Show Another Cat Fact" />
 
 </RelativeLayout>
