@@ -10,11 +10,11 @@ import java.util.Random;
 
 public class CatFactsActivity extends AppCompatActivity {
 
+    private FactBook factBook = new FactBook();
+
     //Declare our view variables
     private TextView factTextView;
     private Button showFactButton;
-
-    FactBook factBook = new FactBook();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
