@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class CatFactsActivity extends AppCompatActivity {
 
     //Declare our view variables
@@ -26,8 +28,13 @@ public class CatFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //The button was clicked, so update the fact TextView with a new fact.
-                String fact = "Cats have been domesticated for around 4,000 years.";
+                //Randomly select a fact
+                Random randomgenerator = new Random();
+                int randomNumber = randomgenerator.nextInt();
 
+                String fact = "";
+
+                //Update the screen with the new fact
                 factTextView.setText(fact);
             }
         };
