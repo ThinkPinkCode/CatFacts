@@ -36,6 +36,7 @@ public class CatFactsActivity extends AppCompatActivity {
                 int color = colorWheel.getColor();
                 factTextView.setText(fact);
                 relativeLayout.setBackgroundColor(color);
+                showFactButton.setTextColor(color);
             }
         };
         showFactButton.setOnClickListener(listener);
