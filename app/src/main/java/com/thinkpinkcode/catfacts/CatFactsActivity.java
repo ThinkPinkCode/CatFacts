@@ -3,15 +3,18 @@ package com.thinkpinkcode.catfacts;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
 public class CatFactsActivity extends AppCompatActivity {
 
+    public static final String TAG = CatFactsActivity.class.getSimpleName();
     private FactBook factBook = new FactBook();
     private ColorWheel colorWheel = new ColorWheel();
 
@@ -40,5 +43,10 @@ public class CatFactsActivity extends AppCompatActivity {
             }
         };
         showFactButton.setOnClickListener(listener);
+
+        //Debugging Helpers
+
+        //Toast.makeText(this,"We're making toast!",Toast.LENGTH_LONG).show();
+        //Log.d(TAG,"OnCreate method just ran");
     }
 }
